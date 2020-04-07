@@ -1,3 +1,9 @@
+This is a fork of Cumulus Network repo (http://github.com/cumulusNetworks/cumulus-cl-ports-puppet).
+
+Actual puppet forge page: https://forge.puppet.com/c2devel/cumulus_ports
+
+Feel free to send patches to http://github.com/c2devel/cumulus-cl-ports-puppet/
+
 # cumulus_ports for Puppet
 
 #### Table of Contents
