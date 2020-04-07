@@ -1,14 +1,14 @@
 {
-  "name": "cumuluslinux-cumulus_ports",
+  "name": "c2devel-cumulus_ports",
   "version": "1.0.3",
   "author": "Cumulus Networks",
   "summary": "Module for managing Cumulus Linux ports.conf",
   "license": "GPLv2",
-  "source": "https://github.com/CumulusNetworks/cumulus-cl-ports-puppet",
-  "project_page": "https://github.com/CumulusNetworks/cumulus-cl-ports-puppet",
-  "issues_url": "https://github.com/CumulusNetworks/cumulus-cl-ports-puppet",
+  "source": "https://github.com/c2devel/cumulus-cl-ports-puppet",
+  "project_page": "https://github.com/c2devel/cumulus-cl-ports-puppet",
+  "issues_url": "https://github.com/c2devel/cumulus-cl-ports-puppet",
   "dependencies": [
-    {"name":"puppetlabs/stdlib","version_requirement":">= 3.2.0 < 5.0.0"}
+    {"name":"puppetlabs/stdlib","version_requirement":">= 3.2.0"}
   ],
   "operatingsystem_support": [
     {
