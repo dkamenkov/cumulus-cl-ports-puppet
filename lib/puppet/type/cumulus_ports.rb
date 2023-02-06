@@ -69,4 +69,8 @@ Puppet::Type.newtype(:cumulus_ports) do
   newparam(:speed_40g) do
     desc 'sets the port to a 40G configuration'
   end
+
+  newparam(:disabled) do
+    desc 'sets the port to a disabled configuration'
+  end
 end

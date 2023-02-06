@@ -97,6 +97,24 @@ Generates a custom `/etc/cumulus/ports.conf` based on the following variables:
   swp2=4x10G
   ```
 
+## Warning
+When you split ports into four interfaces, you must configure the adjacent port as “disabled” in this file. When splitting a port into two interfaces, such as 2x50G, you do not have to disable the adjacent port. Adjacent ports only need to be disabled when a port is split into four interfaces. For example, when splitting port 1 into four 25G interfaces, port 2 must be configured as “disabled”. For more information, refer to the documentation at https://docs.nvidia.com/networking-ethernet-software/cumulus-linux-42/Layer-1-and-Switch-Ports/Interface-Configuration-and-Management/Switch-Port-Attributes/#breakout-ports
+
+* `disabled`: `disabled => 'swp3'` in conjunction with `speed_4_by_10g => 'swp2'`:
+```puppet
+node default {
+  cumulus_ports { 'speeds':
+    speed_4_by_10g => ["swp2"],
+    disabled       => ["swp3"],
+  }
+}
+```
+produces the following text in `/etc/cumulus/ports.conf`:
+  ```
+  swp2=4x10G
+  swp3=disabled
+  ```
+
 ## Limitations
 
 This module only works on Cumulus Linux.

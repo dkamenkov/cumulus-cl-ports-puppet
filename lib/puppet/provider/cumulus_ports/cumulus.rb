@@ -47,7 +47,8 @@ Puppet::Type.type(:cumulus_ports).provide :cumulus do
       speed_10g: '10G',
       speed_40g: '40G',
       speed_4_by_10g: '4x10G',
-      speed_40g_div_4: '40G/4'
+      speed_40g_div_4: '40G/4',
+      disabled: 'disabled'
     }
   end
 

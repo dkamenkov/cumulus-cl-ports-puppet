@@ -9,7 +9,8 @@ describe cl_ports do
       :speed_40g,
       :speed_10g,
       :speed_40g_div_4,
-      :speed_4_by_10g
+      :speed_4_by_10g,
+      :disabled
     ]
   end
 
